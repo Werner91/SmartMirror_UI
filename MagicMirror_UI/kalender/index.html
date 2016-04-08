@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<style type="text/css">
+body {
+	background:#000;
+	color:#fff;
+}
+
+.main {
+	border:1px solid #fff;
+	font-size:1.6em;
+	font-family: "HelveticaNeue-Light", sans-serif;
+//font-family: "Times New Roman", Georgia, Serif;
+letter-spacing: -2px;
+color: #fff;
+
+-webkit-font-smoothing: antialiased;
+}
+
+.month {
+}
+
+.daysofweek {
+	font-weight:bold;
+}
+
+.days {
+	padding: 2px;
+}
+
+.days #today{
+	color: red;
+}
+
+
+table{
+	width:100%;
+	height:99%;
+}
+
+</style>
+
+
+<script type="text/javascript" src="basiccalendar.js">
+
+/***********************************************
+* Basic Calendar-By Brian Gosselin at http://scriptasylum.com/bgaudiodr/
+* Script featured on Dynamic Drive (http://www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+</head>
+<body>
+<script type="text/javascript">
+
+var todaydate=new Date()
+var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+var curyear=todaydate.getFullYear() //get current year
+
+document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 1));
+</script>
+</body>
