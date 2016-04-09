@@ -1,0 +1,44 @@
+body {
+	background:#000;
+	color:#fff;
+	border:0px
+}
+
+.main {
+
+	font-size:1.8em;
+	font-family: "HelveticaNeue-Light";
+	color: #fff;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+.month {
+	color: #aaa;
+}
+
+.daysofweek {
+	font-weight:bold;
+	letter-spacing: -2px;
+	color: #aaa;
+}
+
+.days {
+
+	padding: 2px;
+	letter-spacing: -2px;
+}
+
+.days #today{
+	color: red;
+}
+
+td #today{
+	background-color: #fff;
+
+}
+
+table{
+	width:100%;
+	height:99%;
+}
