@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
 
 });
 
-(function Benzinpreis_e5() {
+	(function Benzinpreis_e5() {
 		$.ajax({
 			url:sprit_benzin_e5_URL,
 			dataType: "json"
@@ -72,7 +72,7 @@ jQuery(document).ready(function($) {
 			});
 		});
 		setTimeout(function() {
-		Benzinpreis();
+		Benzinpreis_e5();
 		}, 300000);
 	})();
 
@@ -89,7 +89,7 @@ jQuery(document).ready(function($) {
 			});
 		});
 		setTimeout(function() {
-		Benzinpreis();
+		Benzinpreis_e10();
 		}, 300000);
 	})();
 
@@ -106,8 +106,88 @@ jQuery(document).ready(function($) {
 			});
 		});
 		setTimeout(function() {
-		Benzinpreis();
+		Dieselpreis();
 		}, 300000);
 	})();
+
+	
+	(function timezone() {
+		var offset_dubai = 2;
+		var offset_lasvegas = -9;
+		var offset_miami = -6;
+		var offset_tokyo = 7;
+		var offset_hawaii = -12;
+		
+		dubai_time = renderTime(offset_dubai);
+		lasvegas_time = renderTime(offset_lasvegas);
+		miami_time = renderTime(offset_miami);
+		tokyo_time = renderTime(offset_tokyo);
+		hawaii_time = renderTime(offset_hawaii);
+
+		$("#time_one").fadeOut(1000);
+		$("#time_one").text("Dubai - " + dubai_time);
+		$("#time_one").fadeIn(1000);
+
+		$("#time_two").fadeOut(1000);
+		$("#time_two").text("Las Vegas - " + lasvegas_time );
+		$("#time_two").fadeIn(1000);
+
+		$("#time_three").fadeOut(1000);
+		$("#time_three").text("Miami - " + miami_time);
+		$("#time_three").fadeIn(1000);
+
+		$("#time_four").fadeOut(1000);
+		$("#time_four").text("Tokyo - " + tokyo_time);
+		$("#time_four").fadeIn(1000);
+
+		$("#time_five").fadeOut(1000);
+		$("#time_five").text("Hawaii - " + hawaii_time);
+		$("#time_five").fadeIn(1000);
+		//return false;
+
+		setTimeout(function() {
+			timezone();
+		}, 60000);
+	})();
+
+
+
+
+function renderTime(offset) {
+
+var currentTime = new Date();
+currentTime.setHours(currentTime.getHours()+offset);
+var h = currentTime.getHours();
+var m = currentTime.getMinutes();
+
+
+if (h == 0) {
+    h = 24
+} else if (h >= 24) {
+    h = h - 24;
+    diem = "PM";
+}
+
+if (h < 10) {
+    h = "0" + h;
+}
+
+if (m < 10) {
+    m = "0" + m;
+}
+
+
+
+//var myClock = document.getElementById ("clockDisplay");
+//myClock.textContent = h + ":" + m + ":" + " ";
+
+myClock = h + ":" + m + " ";
+
+return myClock
+
+setTimeout ('renderTime()', 1000);
+
+}
+
 	
 	

@@ -16,7 +16,24 @@
 <body>
 
 	<div class="top right">
-		
+		<div class="fa fa-globe xdimmed" ></div>
+		<div class="timezones">
+			<span id="time_one" ></span>
+			<div class="fa fa-clock-o" aria-hidden="true"></div>
+			<br>
+			<span id="time_two"></span>
+			<div class="fa fa-clock-o" aria-hidden="true"></div>
+			<br>
+			<span id="time_three"></span>
+			<div class="fa fa-clock-o" aria-hidden="true"></div>
+			<br>
+			<span id="time_four"></span>
+			<div class="fa fa-clock-o" aria-hidden="true"></div>
+			<br>
+			<span id="time_five"></span>
+			<div class="fa fa-clock-o" aria-hidden="true"></div>
+			<br>
+		</div>
 	</div>
 	<div class="top left">
 		<div class ="fa fa-calendar xxsmall xdimmed"></div>
@@ -49,7 +66,6 @@
 <script src="js/rrule.js"></script>
 <script src="js/version/version.js"></script>
 <script src="js/calendar/calendar.js"></script>
-<script src="js/calendar/calendar_two.js"></script>
 <script src="js/compliments/compliments.js"></script>
 <script src="js/weather/weather.js"></script>
 <script src="js/time/time.js"></script>
