@@ -17,22 +17,27 @@ var config = {
         }
     },
     compliments: {
-        interval: 30000,
+        interval: 15000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
+            'Guten Morgen',
+            'Schau mal in den Spiegel',
+            'Welche Infos brauchst du?',
+	    'Mirror mirror on the wall ...'
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
+            'Guten Tag',
+            'Schau mal in den Spiegel',
+            'Welche Infos brauchst du?',
+	    'Mirror mirror on the wall ...',
+	    'Was geht ab?'
         ],
         evening: [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
+            'Guten Abend',
+            'Schau mal in den Spiegel',
+            'Welche Infos brauchst du?',
+	    'Mirror mirror on the wall ...',
+	    'Was geht sonst so?'
         ]
     },
     calendar: {

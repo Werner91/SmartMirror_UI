@@ -27,19 +27,24 @@ var config = {
         interval: 30000,
         fadeInterval: 4000,
         morning: [
-            'Good morning, handsome!',
-            'Enjoy your day!',
-            'How was your sleep?'
+            'Guten Morgen',
+            'Heute schon mal in den Spiegel geschaut?',
+            'Welche Infos brauchst du?'
+	    'Mirror mirror on the wall ...'
         ],
         afternoon: [
-            'Hello, beauty!',
-            'You look sexy!',
-            'Looking good today!'
+            'Guten Tag',
+            'Heute schon mal in den Spiegel geschaut?',
+            'Welche Infos brauchst du?'
+	    'Mirror mirror on the wall ...'
+	    'Was geht ab?'
         ],
         evening: [
-            'Wow, you look hot!',
-            'You look nice!',
-            'Hi, sexy!'
+            'Guten Abend',
+            'Heute schon mal in den Spiegel geschaut?',
+            'Welche Infos brauchst du?'
+	    'Mirror mirror on the wall ...'
+	    'Was geht sonst so?'
         ]
     },
     calendar: {
