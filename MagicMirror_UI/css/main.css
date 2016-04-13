@@ -11,6 +11,7 @@ html {
   font-size: 75px;
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricprecision;
+  -webkit-user-select: none;
 }
 
 .wi {
@@ -61,6 +62,14 @@ html {
   bottom: 50px;
 }
 
+
+.dots{
+  top: 20px;
+  height: 2%;
+  width: auto;
+
+}
+
 .xxsmall,
 .xsmall,
 .small {
@@ -96,10 +105,12 @@ html {
   font-size: 35px;
   letter-spacing: -1px;
   font-family: "HelveticaNeue-Light", sans-serif;
+
 }
 
 .medium .wi {
   line-height: 35px;
+  bottom: 50px;
 }
 
 .xdimmed {

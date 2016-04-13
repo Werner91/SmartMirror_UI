@@ -53,7 +53,9 @@
 		<span class="" id="dieselpreis"></span>
 	</div>
 	<div class="bottom center-hor">
-
+		<br>
+		<br>
+		<img src="../img/page_2.png" class="dots"/>
 	</div>
 
 </div>
